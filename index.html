@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMR</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .header{
+            display: flex;
+            background-color: darksalmon;
+            width: 100vw; /* horizontal */
+            height: 10vh; /* vertical */
+            margin:auto; /*margen*/
+            text-align: center; /*alineacion del texto*/
+            justify-content: center; /* centra horizontalmente */
+            align-items: center; /* centra verticalmente */
+            font-size: 20px; /*tamaño del texto*/
+            color: azure; /*color del texto*/ 
+        }
+
+        .imagen{
+            width: 11vw;
+            height: 7vh;
+            border-radius: 50%;
+            float: left;
+            margin: 2%;
+        }
+
+        .h1{
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .nav{
+            display: flex;
+            background-color: bisque;
+            width: 100vw;
+            height: 7vh;
+            justify-content: center;
+        }
+
+        .ul{
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+            margin-left: 20px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .a{
+            color: grey;
+            display: flex;
+            text-decoration: none;
+        }
+
+        .cuadrados{
+            display: flex;
+        }
+
+        .aside{
+            background-color: darkseagreen ;
+            width: 40vw;
+            height: 60vh;
+            margin: 2%;
+            border-radius: 1%;
+            float: left;
+        }
+        
+        .main{
+            background-color: blanchedalmond;
+            width: 55vw;
+            height: 60vh;
+            margin: 2%;
+            float: right;
+            border-radius: 1%;
+        }
+        
+        .details{
+            background-color: #fff7e6;
+            border: 1px solid #e0b97d;
+            border-radius: 8px;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .summary{
+            font-weight: bold;
+            font-size: 1.1em;
+            cursor: pointer;
+            list-style: none; /* Desaparece el triangulo */
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer{
+            background-color: darksalmon;
+            width: 100vw;
+            height: 17vh;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="header" style="text-align: center;">
+        <img src="../../img/avatar.png" class="imagen">                                  
+        <marquee>
+            <h1 class="h1">Alba Vallejo</h1>
+        </marquee>
+    </header>
+    
+    <nav class="nav">
+        <ul class="ul">
+            <a href="./bolitas.html" class="a"> Bolitas</a> 
+            <a href="./div.html" class="a"> Ejercicio_Div</a>
+            <a href="../../tutor/tutorial1.mp4" class="a"> Tutorial</a>
+            <a href="../../dhcp.html" class="a">DHCP</a>
+
+        </ul>
+    </nav>
+    
+    <div class="cuadrados">
+        <aside class="aside">
+        </aside>
+
+        <main class="main">
+            <details class="details">
+                <summary class="summary">Horario</summary>
+                <p>Los lunes SASP a primera hora, seguido de SOR hasta el recreo y luego SER e IPEII. Los martes a primera OPT, después APW, MME y terminar con SOR. Los miércoles empezar con SOR, continuar con SER, luego IPEII y acabar con MME. Los jueves SER, DASP, IPEII, OPT, MME y finalizar con PI. Y los viernes con dos horas de MME, luego SER, SOR, OPT y terminar con APW.</p>
+            </details>
+
+            <details class="details">
+                <summary class="summary">Cursos</summary>
+                    <p>El ciclo de Sistemas Microinformáticos y Redes (SMR) tiene dos cursos: en el primero se aprenden las bases de la informática, montaje de equipos, sistemas operativos y redes; y en el segundo se profundiza en la administración de sistemas, la seguridad informática y la atención al usuario, incluyendo prácticas en empresas.<p>
+            </details>
+
+            <details class="details">
+                <summary class="summary">Practicas</summary>
+                    <p>En las prácticas de SMR, los alumnos trabajan en empresas del sector realizando tareas de montaje y reparación de equipos, configuración de redes y soporte técnico, aplicando lo aprendido en clase.</p>
+            </details>
+        </main>
+
+    </div>
+    <footer class="footer">
+
+    </footer>
+    
+</body>
+</html>
